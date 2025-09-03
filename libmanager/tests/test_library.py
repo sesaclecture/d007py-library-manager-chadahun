@@ -14,6 +14,7 @@ def test_add_and_list_books():
     for b in make_books():
         svc.add_book(b)
     books = list(svc.list_books())
+    print(books)
     assert len(books) == 2
     assert books[0].title == '책이름'
 
